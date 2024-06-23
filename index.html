@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #f1f1f1;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .metric {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .metric:hover {
+            background-color: #f0f0f0;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            max-width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .popup img {
+            max-width: 100%;
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <h1>K C Gouda</h1>
+            <p>M.Sc., M.Phil., MCA, PhD · Senior Principal Scientist at CSIR Fourth Paradigm Institute, India</p>
+            <p>Weather & Climate Modelling · Remote Sensing · Knowledge Engineering</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#affiliations">Affiliations</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <div class="metrics">
+                <div class="metric" id="publications">
+                    <p>187</p>
+                    <p>Publications</p>
+                </div>
+                <div class="metric" id="reads">
+                    <p>68,070</p>
+                    <p>Reads</p>
+                </div>
+                <div class="metric citations-metric" id="citations">
+                    <p>722</p>
+                    <p>Citations</p>
+                </div>
+            </div>
+            <p>Brief introduction about yourself, your skills, and experience.</p>
+        </section>
+        
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Senior Principal Scientist</h3>
+                <p><strong>CSIR Fourth Paradigm Institute - India</strong> · Full-time</p>
+                <p>Oct 2021 - Present · 2 yrs 9 mos</p>
+                <p>Bengaluru, Karnataka, India · On-site</p>
+            </div>
+            <div class="experience-item">
+                <h3>Honorary Scientist</h3>
+                <p><strong>University of Liverpool</strong></p>
+                <p>Apr 2018 - Present · 6 yrs 3 mos</p>
+                <p>Liverpool, United Kingdom</p>
+            </div>
+            <div class="experience-item">
+                <h3>Coordinator (PhD Programme)</h3>
+                <p><strong>Academy of Scientific and Innovative Research</strong></p>
+                <p>Jan 2018 - Present · 6 yrs 6 mos</p>
+            </div>
+            <div class="experience-item">
+                <h3>Member in HiWeather Project</h3>
+                <p><strong>World Meteorological Organization</strong></p>
+                <p>Oct 2017 - Present · 6 yrs 9 mos</p>
+            </div>
+            <div class="experience-item">
+                <h3>Visiting Scientist</h3>
+                <p><strong>CSIRO</strong></p>
+                <p>May 2017 - Present · 7 yrs 2 mos</p>
+                <p>Melbourne, Australia</p>
+            </div>
+            <div class="experience-item">
+                <h3>Executive Member</h3>
+                <p><strong>INDIA METEOROLOGICAL SOCIETY</strong></p>
+                <p>Mar 2016 - Present · 8 yrs 4 mos</p>
+                <p>Bangalore</p>
+            </div>
+            <div class="experience-item">
+                <h3>Advisory Council Member, Board of Studies, Department of Master of Computer Application (VTU)</h3>
+                <p><strong>Dayananda Sagar Institutions</strong></p>
+                <p>Jan 2014 - Present · 10 yrs 6 mos</p>
+                <p>Bangalore</p>
+            </div>
+            <div class="experience-item">
+                <h3>Advisory Council Member, Board of Studies, Dept of Computer Science and Engineering</h3>
+                <p><strong>Dayananda Sagar College of Engineering</strong></p>
+                <p>Apr 2012 - Present · 12 yrs 3 mos</p>
+                <p>Bangalore</p>
+            </div>
+            <div class="experience-item">
+                <h3>Faculty</h3>
+                <p><strong>Academy of Scientific and Innovative Research (AcSIR)</strong></p>
+                <p>Jan 2013 - Present · 11 yrs 6 mos</p>
+                <p>CSIR C-MMACS, AcSIR</p>
+            </div>
+            <div class="experience-item">
+                <h3>Advisory Council Member, Board of Studies, School of Computer Sciences</h3>
+                <p><strong>Jain (Deemed-to-be University)</strong></p>
+                <p>Apr 2012 - Present · 12 yrs 3 mos</p>
+                <p>Jain University, Bangalore</p>
+            </div>
+            <div class="experience-item">
+                <h3>Senior Scientist</h3>
+                <p><strong>CSIR Fourth Paradigm Institute</strong></p>
+                <p>2012 - Present · 12 yrs 6 mos</p>
+                <p>Bangalore Area, India</p>
+            </div>
+            <div class="experience-item">
+                <h3>Scientist</h3>
+                <p><strong>CSIR Fourth Paradigm Institute</strong></p>
+                <p>Aug 2004 - Present · 19 yrs 11 mos</p>
+            </div>
+            <div class="experience-item">
+                <h3>Ex Officio Member, Long Range Prediction of Monsoon Team, MoES</h3>
+                <p><strong>Ministry of Earth Sciences, Govt of India</strong></p>
+                <p>Mar 2008 - Present · 16 yrs 4 mos</p>
+                <p>New Delhi</p>
+            </div>
+            <div class="experience-item">
+                <h3>Senior Scientist</h3>
+                <p><strong>CSIR Fourth Paradigm Institute</strong></p>
+                <p>Jan 2016 - Jan 2021 · 5 yrs 1 mo</p>
+                <p>Bangalore</p>
+            </div>
+            <div class="experience-item">
+                <h3>EMCR Fellow</h3>
+                <p><strong>Indian National Science Academy</strong></p>
+                <p>May 2017 - Sep 2017 · 5 mos</p>
+                <p>New Delhi Area, India</p>
+            </div>
+            <div class="experience-item">
+                <h3>Researcher</h3>
+                <p><strong>KAGI 21</strong></p>
+                <p>2005 - 2011 · 6 yrs</p>
+            </div>
+            <div class="experience-item">
+                <h3>Scientific Team Member</h3>
+                <p><strong>International Research for Prevention and Mitigation of Meteorological Disasters in Southeast Asia</strong></p>
+                <p>Jan 2007 - Dec 2009 · 3 yrs</p>
+                <p>Japan</p>
+            </div>
+            <div class="experience-item">
+                <h3>Member, Active Geosphere Research Team</h3>
+                <p><strong>Kyoto University</strong></p>
+                <p>Aug 2005 - Sep 2005 · 2 mos</p>
+                <p>Japan and Indonesia</p>
+            </div>
+            <div class="experience-item">
+                <h3>Fellow</h3>
+                <p><strong>National Remote Sensing Centre (ISRO)</strong></p>
+                <p>Jan 2002 - Aug 2004 · 2 yrs 8 mos</p>
+                <p>Hyderabad Area, India</p>
+            </div>
+            <div class="experience-item">
+                <h3>Guest Lecturer</h3>
+                <p><strong>Government Science College, Bangalore University</strong></p>
+                <p>Jun 2001 - Dec 2001 · 7 mos</p>
+                <p>Bangalore</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Weather & Climate Modelling</li>
+                <li>Remote Sensing</li>
+                <li>Knowledge Engineering</li>
+                <li>Data Analysis</li>
+                <li>Programming</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="affiliations" class="container">
+            <h2>Affiliations</h2>
+            <ul>
+                <li>Member, HiWeather Project, World Meteorological Organization</li>
+                <li>Executive Member, India Meteorological Society</li>
+                <li>Advisory Council Member, Board of Studies, Dept of Computer Science and Engineering, Dayananda Sagar College of Engineering</li>
+                <!-- Add more affiliations as needed -->
+            </ul>
+        </section>
+
+        <section id="publications" class="container">
+            <h2>Publications</h2>
+            <ul>
+                <li>Publication 1</li>
+                <li>Publication 2</li>
+                <li>Publication 3</li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </section>
+
+        <section id="education" class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Doctor of Philosophy (PhD) in Physics</h3>
+                <p><strong>Mangalore University</strong></p>
+                <p>2011</p>
+                <p>Dissertation: "Multi-scale Modelling and Forecasting of Monsoon Weather and Processes"</p>
+            </div>
+            <div class="education-item">
+                <h3>Master of Computer Applications (MCA) in Computer Science</h3>
+                <p><strong>Indira Gandhi National Open University</strong></p>
+                <p>2001 - 2004</p>
+            </div>
+            <div class="education-item">
+                <h3>M.Phil</h3>
+                <p><strong>Berhampur University</strong></p>
+                <p>2000 - 2001</p>
+            </div>
+            <div class="education-item">
+                <h3>Master of Science (MS)</h3>
+                <p><strong>Berhampur University</strong></p>
+                <p>1997 - 1999</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Science (BSc) in Physics</h3>
+                <p><strong>Berhampur University</strong></p>
+                <p>1994 - 1997</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 K C Gouda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <img src="citations.jpg" alt="Citations Graph">
+    </div>
+
+    <div id="contact-popup" class="popup">
+        <span class="close" id="closeContactPopup">&times;</span>
+        <div>
+            <h2>Contact Information</h2>
+            <p><strong>Position:</strong> Senior Principal Scientist</p>
+            <p><strong>Email:</strong> kcgouda@csir4pi.in</p>
+            <p><strong>Phone:</strong> (+91)80-25051344</p>
+            <p><strong>Fax:</strong> (+91)80-25220392</p>
+            <p><strong>Website:</strong> <a href="https://www.csir4pi.res.in/~kcgouda" target="_blank">https://www.csir4pi.res.in/~kcgouda</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dr-krushna-chandra-gouda-53080a7a" target="_blank">linkedin.com/in/dr-krushna-chandra-gouda-53080a7a</a></p>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.contact-btn').addEventListener('click', function() {
+            document.getElementById('contact-popup').style.display = 'block';
+        });
+    
+        document.getElementById('closeContactPopup').addEventListener('click', function() {
+            document.getElementById('contact-popup').style.display = 'none';
+        });
+    
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('contact-popup')) {
+                document.getElementById('contact-popup').style.display = 'none';
+            }
+        });
+    </script>
+    
+
+    <script>
+        document.getElementById('citations').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'block';
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('popup')) {
+                document.getElementById('popup').style.display = 'none';
+            }
+        });
+
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            document.getElementById('contactPopup').style.display = 'block';
+        });
+
+        document.getElementById('closeContact').addEventListener('click', function() {
+            document.getElementById('contactPopup').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('contactPopup')) {
+                document.getElementById('contactPopup').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
